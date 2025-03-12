@@ -42,5 +42,30 @@ file.close()
 print(file.closed)
 # print(file.read())
 
+file = open('.\\files\\tekstas.txt')
+text = file.read()
+close_text = file.close()
+print(file.closed)
 
+with open('.\\files\\tekstas.txt') as file:
+    text2 = file.read()
+print(file.closed)
+
+with open('.\\files\\tekstas.txt') as file2:
+    line = file2.readline()
+    print(line)
+    line = file2.readline()
+    print(line)
+    line = file2.readline()
+    print(line)
+    line = file2.readline()
+    print(line)
+    line = file2.readline()
+    print(line)
+
+with open('.\\files\\tekstas.txt') as file3:
+    line2 = file3.readlines()
+    print(line2)
+
+# padariau ties 11
 
