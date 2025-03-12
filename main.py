@@ -1,20 +1,46 @@
 
-print("\n1 Užduotis\n")
-print("----read----readline----readlines----")
-people = open('.\\files\\people.csv')
-read_people = people.read()
-# readline_people = people.readline()
-# readlines_people = people.readlines()
+print("\n1 Užduotis")
+print("\n----read----readline----readlines----\n")
 
-print("Read text: \n" + read_people)
-# print(readline_people)
-# print(readlines_people)
+text = open('.\\files\\tekstas.txt')
+read_text = text.read()
+# readline_text = text.readline()
+# readlines_text = text.readlines()
 
-other_people = people.read()
-print("Other text: \n" + other_people)
+print("Read text: \n" + read_text)
+# print(readline_text)
+# print(readlines_text)
 
-people.close()
+other_text = text.read()
+print("\nOther text: \n" + other_text)
 
+text.close()
+
+print("\n----seek----\n")
+
+text = open('.\\files\\tekstas.txt')
+read_text = text.read()
+print("Read text: \n" + read_text)
+
+text.seek(0)
+seek_text = text.read()
+print("\nSeek text: \n" + seek_text)
+text.close()
+
+print("\n----with----\n")
+
+with open('.\\files\\tekstas.txt') as file:
+    text = file.read()
+print(text)
+
+file = open('.\\files\\tekstas.txt')
+text = file.read()
+print("\n" + text)
+
+print(file.closed)
+file.close()
+print(file.closed)
+# print(file.read())
 
 
 
