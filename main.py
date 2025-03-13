@@ -151,7 +151,7 @@ with open('.\\files\\writing.csv','r+') as writing:
 
 print("\n3 Užduotis. Susikurkite duomenų failą, iš kurio nusiskaitytumėte informaciją apie automobilius. Išskaičiuokite keletą norimų dalykų (pvz. metų vidurkį) ir skaičiavimų rezultatus išveskite rezultatų faile.")
 
-with open('.\\files\\cars.csv') as cars:
-    cars.read()
-
+with open('.\\files\\Cars.csv') as cars:
+    cars = cars.read()
+    print(cars)
 
